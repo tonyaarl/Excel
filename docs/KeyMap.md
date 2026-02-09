@@ -1,8 +1,8 @@
 # Key Map
 
-| Type  | Code |
-|-------|------|
-| Array | `A` |
+## | Type  | Code |
+## |-------|------|
+## | Array | `A` |
 
 ## Array `A`
 
