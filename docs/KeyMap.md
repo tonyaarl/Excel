@@ -2,7 +2,8 @@
 
 | Type  | Code |
 |-------|------|
-| Array | `A` |
+| <b>Array</b> | <b>`A`</b> |
+
 ## Array `A`
 
 ## Boolean `B`
