@@ -2,7 +2,7 @@
 
 | Type  | Code |
 |-------|------|
-| <b>Array</b> | <b>`A`</b> |
+| # Array | # `A` |
 
 ## Array `A`
 
