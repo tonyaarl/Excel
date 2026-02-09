@@ -1,8 +1,11 @@
 # Key Map
 
-## | Type  | Code |
-## |-------|------|
-## | Array | `A` |
+<h2 style="text-align:center;">Key Map `A`</h2>
+
+
+| Type  | Code |
+|-------|------|
+| Array | `A` |
 
 ## Array `A`
 
