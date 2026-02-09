@@ -2,32 +2,32 @@
 
 ## Array `A`
 
-## Byte `Bt`
-
-## Integer `I`
-
-## Long `L`
-
-## LongLong `LL`
-
-## Single `Sgl`
-
-## Double `Dbl`
+## Boolean `B`
 
 ## Currency `C`
 
-## Collection `Col`
-
-## String `S`
-
-## Boolean `B`
-
 ## Date `D`
 
-## Variant `V`
+## Single `F`
+
+## Double `G`
+
+## Integer `I`
+
+## LongLong `K`
+
+## Long `L`
+
+## Collection `N`
 
 ## Object `O`
 
-## Decimal `Dml` 
+## String `S`
 
-## Dictionary `Dct`
+## Variant `V`
+
+## Decimal `X` 
+
+## Byte `Y`
+
+## Dictionary `Z`
