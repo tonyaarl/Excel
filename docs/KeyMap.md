@@ -1,8 +1,7 @@
 # Key Map
 
-## | Array | `A` |
-   |---|---|
-   
+## Array `A`
+
 ## Boolean `B`
 
 ## Currency `C`
@@ -32,3 +31,8 @@
 ## Byte `Y`
 
 ## Dictionary `Z`
+
+
+| A | B |
+|---|---|
+| <b>Title</b> | text |
