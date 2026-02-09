@@ -1,6 +1,6 @@
 # Key Map
 
-Array <kbd>A</kbd>
+Array <kbd>A</kbd> `A`
 
 <sub>Byte</sub>
 
