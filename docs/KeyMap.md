@@ -2,9 +2,9 @@
 
 `Array`
 
-Byte
+<sub>Byte</sub>
 
-Integer
+<sup>Integer</sup>
 
 Long
 
