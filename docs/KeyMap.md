@@ -1,5 +1,8 @@
 # Key Map
 
+| Type  | Code |
+|-------|------|
+| Array | `A` |
 ## Array `A`
 
 ## Boolean `B`
@@ -33,6 +36,4 @@
 ## Dictionary `Z`
 
 
-| | |
-|---|---|
-| <b>Title</b> | text |
+
