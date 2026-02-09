@@ -1,6 +1,6 @@
 # Key Map
 
-## Array `A`
+## | Array | `A` |
 
 ## Boolean `B`
 
