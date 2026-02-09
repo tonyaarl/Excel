@@ -1,33 +1,33 @@
 # Key Map
 
-Array <kbd>A</kbd> `A`
+## Array `A`
 
-<sub>Byte</sub>
+## Byte `Bt`
 
-<sup>Integer</sup>
+## Integer `I`
 
-Long
+## Long `L`
 
-LongLong
+## LongLong `LL`
 
-Single
+## Single `Sgl`
 
-Double
+## Double `Dbl`
 
-Currency
+## Currency `C`
 
-Collection
+## Collection `Col`
 
-String
+## String `S`
 
-Boolean
+## Boolean `B`
 
-Date
+## Date `D`
 
-Variant
+## Variant `V`
 
-Object
+## Object `O`
 
-Decimal
+## Decimal `Dml` 
 
-Dictionary
+## Dictionary `Dct`
