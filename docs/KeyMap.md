@@ -33,6 +33,6 @@
 ## Dictionary `Z`
 
 
-| A | B |
+
 |---|---|
 | <b>Title</b> | text |
