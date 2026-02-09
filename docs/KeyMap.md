@@ -1,7 +1,8 @@
 # Key Map
 
 ## | Array | `A` |
-
+   |---|---|
+   
 ## Boolean `B`
 
 ## Currency `C`
