@@ -137,5 +137,5 @@ Output
 
 </details>
 
-Footnote
-[^note]: Additional Information
+Footnote[^1]
+[^1]: Additional Information
