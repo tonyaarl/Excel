@@ -28,8 +28,6 @@ Output
 
 </details>
 
-> Reference</br>
-> [Link](https://www.youtube.com/watch?v=Ql0Dco6Pnfs)
 ##
 > ### Subsection 1.2
 ```vba
@@ -47,8 +45,6 @@ Output
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Value 1  | Value 2  | Value 3  |
-> [!NOTE]
-> Additional Information!
 
 </details>
 
@@ -70,8 +66,6 @@ Output
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Value 1  | Value 2  | Value 3  |
-> [!TIP]
-> Suggestion!
 
 </details>
 
@@ -92,8 +86,6 @@ Output
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Value 1  | Value 2  | Value 3  |
-> [!IMPORTANT]
-> Key Information!
 
 </details>
 
@@ -115,8 +107,6 @@ Output
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Value 1  | Value 2  | Value 3  |
-> [!WARNING]
-> Be Careful!
 
 </details>
 
@@ -137,10 +127,5 @@ Output
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Value 1  | Value 2  | Value 3  |
-> [!CAUTION]
-> Be Extremely Careful!
 
 </details>
-
-Footnote[^1]
-[^1]: Additional Information
