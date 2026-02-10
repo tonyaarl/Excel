@@ -37,6 +37,7 @@ Summary
 ```
 <details>
 <summary>Details</summary>
+
 ```vba
 Code
 ```
@@ -59,6 +60,7 @@ Summary
 ```
 <details>
 <summary>Details</summary>
+
 ```vba
 Code
 ```
@@ -80,6 +82,7 @@ Summary
 ```
 <details>
 <summary>Details</summary>
+
 ```vba
 Code
 ```
@@ -102,6 +105,7 @@ Summary
 ```
 <details>
 <summary>Details</summary>
+
 ```vba
 Code
 ```
@@ -123,6 +127,7 @@ Summary
 ```
 <details>
 <summary>Details</summary>
+
 ```vba
 Code
 ```
