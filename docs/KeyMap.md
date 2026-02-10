@@ -3,9 +3,8 @@
 | Type  | Code |
 |-------|------|
 | Array | `A`  |
-|-------|------|
+| | |
 | Boolean | `B` |
-|-------|------|
 | Currency | `C` |
 | Date | `D` |
 | Single | `F` |
