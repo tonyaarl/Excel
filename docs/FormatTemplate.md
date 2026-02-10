@@ -11,6 +11,12 @@
 ## Section 1
 > ### Subsection 1.1
 ```vba
+Summary
+```
+
+<details>
+<summary>Details</summary>
+```
 Code
 ```
 ```
@@ -21,6 +27,7 @@ Output
 | Value 1  | Value 2  | Value 3  |
 > Reference</br>
 > [Link](https://www.youtube.com/watch?v=Ql0Dco6Pnfs)
+</details>
 ##
 > ### Subsection 1.2
 ```vba
