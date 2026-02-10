@@ -28,29 +28,3 @@ Function Division(A As Integer, B As Integer) As Double
     End If
 End Function
 ```
-
-The content below is just testing. Fixing later
-
-<details>
-<summary>Collapsible Section</summary>
-
-Test 1 2 3
-
-> ### Division
-```vba
-Function Division(A As Integer, B As Integer) As Double
-    If B = 0 Then
-        Division = 0
-    Else
-        Division = A / B
-    End If
-End Function
-```
-
-</details>
-
-
-![Data Type Icon Test](../../I.png)
-
-
-This is an <img src="../../A.png" width="24" height="24" style="object-fit: contain;">pple
