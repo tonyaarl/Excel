@@ -138,4 +138,4 @@ Output
 </details>
 
 Footnote
-[^1]: Additional Information
+[^note]: Additional Information
