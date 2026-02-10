@@ -35,7 +35,6 @@ Output
 ```vba
 Summary
 ```
-
 <details>
 <summary>Details</summary>
 ```vba
@@ -58,7 +57,6 @@ Output
 ```vba
 Summary
 ```
-
 <details>
 <summary>Details</summary>
 ```vba
@@ -80,7 +78,6 @@ Output
 ```vba
 Summary
 ```
-
 <details>
 <summary>Details</summary>
 ```vba
@@ -103,7 +100,6 @@ Output
 ```vba
 Summary
 ```
-
 <details>
 <summary>Details</summary>
 ```vba
@@ -125,7 +121,6 @@ Output
 ```vba
 Summary
 ```
-
 <details>
 <summary>Details</summary>
 ```vba
