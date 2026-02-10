@@ -120,3 +120,21 @@ Output
 | Value 1  | Value 2  | Value 3  |
 
 </details>
+
+> Reference</br>
+> [Link](https://www.youtube.com/watch?v=Ql0Dco6Pnfs)
+
+> [!NOTE]
+> Additional Information!
+
+> [!TIP]
+> Suggestion!
+
+> [!IMPORTANT]
+> Key Information!
+
+> [!WARNING]
+> Be Careful!
+
+> [!CAUTION]
+> Be Extremely Careful!
