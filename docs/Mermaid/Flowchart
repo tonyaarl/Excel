@@ -1,0 +1,79 @@
+flowchart LR
+
+%%  Syntax
+    %% Diagram      flowchart
+    %% Direction    flowchart [TB, BT, LR, RL]
+
+    %% Rectangle            []      [Generic Process]
+    %% Rounded Rectangle    ()      [Specific Operation]
+    %% Struck Rectangle     [[]]    [Predefined Process]
+    %% Cylinder             [()]    [Database]
+    %% Capsule              ([])    [Start/End Terminator]
+    %% Circle               (())    [Connector]
+    %% Diamond              {}      [Decision]
+    %% Hexagon              {{}}    [Initialization / Setup]
+    %% Parallelogram L      [\\]    [Data Input]
+    %% Parallelogram R      [//]    [Data Output]
+    %% Trapezoid A          [/\]    [Preparation]
+    %% Trapezoid V          [\/]    [Manual Operation]
+
+    %% Line                 ---
+    %% Dotted Line          -.-
+    %% Arrow (Thin)         -->
+    %% Arrow (Thick)        ==>
+    %% Chain                A --> B --> C
+
+    %% Label                -->||
+
+    %% Subgraph             subgraph NAME["LABEL"] ... end
+    %% Nesting              subgraph A["B"] subgraph C["D"] ... end end 
+
+%%  Shape
+    Rectangle[Generic Process]
+    RectangleRound(Specific Operation)
+    RectangleStruck[[Predefined Process]]
+    Cylinder[(Database)]
+    Capsule([Start/End Terminator])
+    Circle((Connector))
+    Diamond{Decision}
+    Hexagon{{Initialization / Setup}}
+    ParallelogramL[\Data Input\]
+    ParallelogramR[/Data Output/]
+    TrapezoidA[/Preparation\]
+    TrapzeoidV[\Manual Operation/]
+
+%%  Connection
+    A --- B
+    C -.- D
+    C -.- E
+    E --> F
+    G ==> H
+    G ==> E
+    H ==> F
+    I --- J -.- K --> L ==> M --> sg
+
+%% Subgraph
+    subgraph sg["Subgraph"]
+    direction LR
+        N[N] --> O[O]
+    end
+
+    sg --> sg1
+
+    subgraph sg1["Subgraph Level 1"]
+    direction LR
+
+        T[T] --> U[U]
+
+        subgraph sg2["Subgraph Level 2"]
+        direction RL
+
+            R[R] --> S[S]
+
+            subgraph sg3["Subgraph Level 3"]
+            direction BT
+
+                P[P] --> Q[Q]
+           end
+        end
+    end
