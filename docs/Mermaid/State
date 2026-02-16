@@ -31,14 +31,14 @@ direction LR
     %% Position     left of / right of (above / below not working)
 
 %%  State
-        [*]
-        State1
-        State2 : State2 (Implicit)
-        state "State3 (Explicit)" as State3
+    [*]
+    State1
+    State2 : State2 (Implicit)
+    state "State3 (Explicit)" as State3
 
 %%  Composite
     state Composite {
-        Direction TB
+    Direction TB
 
         [*]
         A
