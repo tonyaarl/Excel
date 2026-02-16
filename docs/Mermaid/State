@@ -1,0 +1,167 @@
+stateDiagram-v2
+direction LR
+
+%%  Syntax
+
+    %% Diagram      stateDiagram-v2
+    %% Direction    direction [TB, BT, LR, RL]
+
+    %% Pseudo State [*]
+    %% Declaration  state
+    %% Alias        as
+
+    %% Composite    { ... }
+    %% Nesting      { { ... { ... } } ... }
+
+    %% Transition   -->
+
+    %% Entry        <<entrypoint>>
+    %% Exit         <<exitpoint>>
+
+    %% Branch       <<choice>>
+
+    %% Split        <<fork>>
+    %% Merge        <<join>>
+
+    %% Separator    --
+
+    %% Description  :
+
+    %% Note         note ... end note
+    %% Position     left of / right of (above / below not working)
+
+%%  State
+        [*]
+        State1
+        State2 : State2 (Implicit)
+        state "State3 (Explicit)" as State3
+
+%%  Composite
+    state Composite {
+        Direction TB
+
+        [*]
+        A
+        B
+        C
+
+    }
+
+%%  Nesting
+    state Nesting {
+        state "Level 1" as Level1
+        state N2 {
+            state "Level 2" as Level2
+            state N3 {
+                state "Level 3" as Level3
+            }
+        }
+    }
+
+%%  Transition
+    state Transition {
+    direction LR
+        [*] --> X
+        X --> Y
+        Y --> Z
+        Z --> [*]
+
+    }
+
+%%  Port
+    state Port {
+    direction LR
+        [*] --> I
+        I --> J
+        J --> K
+        K --> [*]
+
+    }
+
+        state Entry1 <<entrypoint>>
+        state Entry2 <<entrypoint>>
+        state Exit1 <<exitpoint>>
+        Entry1 --> J
+        Entry2 --> K
+        I --> Exit1
+        K --> Exit1
+
+%%  Branch
+    state Branch {
+    direction LR
+
+        state Branch1 <<choice>>
+        state Branch2 <<choice>>
+
+        R --> Branch1
+        R --> Branch2
+
+        S --> Branch1
+
+        T --> Branch2
+
+        Branch1 --> Output1
+        Branch2 --> Output2
+
+    }
+
+%%  Parallel
+    state Parallel {
+    direction LR
+
+        state Fork1 <<fork>>
+        state Fork2 <<fork>>
+        state Join1 <<join>>
+        state Join2 <<join>>
+
+        D --> Fork1
+        Fork1 --> E
+        Fork1 --> F
+
+        E --> Join1
+
+        F --> Fork2
+        Fork2 --> G
+        Fork2 --> H
+
+        Join1 --> Join2
+
+        H --> Join1
+        G --> Join2
+
+    }
+
+%%  Separate
+    state Separate {
+    
+    direction LR
+        L1 --> L2
+        L2 --> L3
+        --
+    direction TB
+        W --> Q
+        W --> V
+        --
+    direction RL
+        U1 --> U2
+
+    }
+
+%%  Label
+    state Label {
+    direction LR
+
+        [*] --> M : Step 1
+        M --> N : Step 2
+        N --> O : Condition 1
+        N --> P : Condition 2
+
+        note left of M
+            Function: M
+        end note
+
+        note right of N
+            Function: N
+        end note
+
+    }
