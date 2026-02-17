@@ -1,0 +1,84 @@
+gantt
+title Mermaid Gantt Diagram Syntax Template
+todaymarker oon
+excludes weekends, 08.01.2026
+dateFormat DD.MM.YYYY
+
+axisFormat %Y-%m-%d%
+
+%%  Syntax
+    %% Diagram      gantt
+
+    %% Title        title "TITLE"
+    %% todayMarker  on | off
+    %% excludes     monday...sunday | weekends | 01.01.2026
+    
+    %% Date Format  DD.MM.YYYY  | DD-MM-YYYY | YYYY.MM.DD | YYYY-MM-DDD
+    %% Axis Format  %y-%m-%d    
+    %%                          | A -> "Monday",    a -> "Mon"
+    %%                          | B -> "January",   b -> "Jan"
+    %%                          |                   c -> 1//1/2026, 12:00:00 AM
+    %%                          |                   d -> 01
+    %%                          |                   e ->  1
+    %%                          | H -> 24-hour
+    %%                          | I -> 12-hour
+    %%                          |                   j -> Day Number
+    %%                          | L -> Millisecond
+    %%                          | M -> Minute       m -> Month Number
+    %%                          |                   p -> AM / PM
+    %%                          | S -> Second
+    %%                          | U -> Week Number
+    %%                          | X -> Locale Time  x -> Locale Date
+    %%                          | Y -> 2026         y -> 26
+    %%                          | Z -> Time Zone
+
+    %% Section      section "SECTION ID"
+
+    %% Task         "Task" : "ID", Date_Start, Date_End
+    %% Duration     "Task" : "ID", Date_Start, Duration
+    %% After        "Task" : "ID", after OTHER_ID, Duration
+
+    %% Active       "Task" : active, "ID", Start, End / Duration
+    %% Done         "Task" : done, "ID", Start, End / Duration
+    %% Critical     "Task" : crit, "ID", Start, End / Duration
+    %% Milestone    "Task" : milestone, "ID", Start, End / Duration
+
+    %% Example Units         1d, 2w, 1m, 1y, 1h ...
+
+section Section1
+    Task 1              :   a1, 01.01.2026, 02.01.2026
+    Task 2              :   a2, 02.01.2026, 03.01.2026
+    Task 3              :   a3, after a2, 1d
+    Task 4              :   a4, after a3, 1d
+    A Very Short Task   :   a5, after a4, 1h
+    An Empty Task       :   a6, after a5, 0d
+
+section Section2
+    Active Task                     :   active, b1, 01.01.2026, 05.01.2026
+    Finished Task                   :   done, b2, 05.01.2026, 10.01.2026
+    Critical task!                  :   crit, b3, 10.01.2026, 15.01.2026
+    Active and Critical!            :   crit, active, b4, 15.01.2026, 20.01.2026
+    Good Job!                       :   milestone, b5, 15.01.2026, 0d
+    Important Milestone!            :   crit, milestone, b6, 15.01.2026, 0d
+    Active and Critical Milestone!  :   crit, milestone, active, b7, 15.01.2026, 1d
+                %% Milestone Requires Duration (Not using "0d" Will Offset Milestone)
+                %% Active and Done - Priority By Order As They Do Not Mix
+
+section Section3
+    Task A  :   c1, 01.01.2026, 56h
+    Task B  :   c2, after c1, 10h
+                %% Excluded Hours Shifted Forward
+
+section Section4
+    Task A  : d1, 01.01.2026, 42h
+    Task B  : d2, 01.01.2026, 24h
+    Task C  : d3, after d1 d2, 24h
+
+    Task D  : d4, 01.01.2026, 24h
+    Task E  : d5, 01.01.2026, 42h
+    Task F  : d6, after d4 d5, 24h
+                %% Ensure Task Starts After All Dependencies
+
+    Task G  :   milestone, d7, after d1 d2 d3 d4 d5 d6, 0d
+    Task H  :   d8, after d7, 1d
+                %% Task After Milestone, Also Shifted Forward
