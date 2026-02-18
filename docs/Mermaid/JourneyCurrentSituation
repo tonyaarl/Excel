@@ -1,0 +1,25 @@
+journey
+title Current Situation (As Is)
+
+%%  Syntax
+    %% Diagram      journey
+    %% Title        title "TITLE"
+
+    %% Section      section "SECTION"
+    %% Step         "OPERATION" : "SCORE" : "ACTOR_1", "ACTOR_2", "ACTOR_3" ...
+
+section Task 1
+    Operation 1: 4: User 1
+    Operation 2: 7: User 1, User 3
+    Operation 3: 3: User 1
+    Operation 4: 8: User 1, User 2
+section Task 2
+    Operation 1: 2: User 1
+    Operation 2: 7: User 2, User 3
+    Operation 3: 3: User 3
+    Operation 4: 4: User 1, User 3
+section Task 3
+    Operation 1: 5: User 2, User 3
+    Operation 2: 5: User 2
+    Operation 3: 3: User 2
+    Operation 4: 7: User 1, User 2, User 3
