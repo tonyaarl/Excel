@@ -1,0 +1,39 @@
+timeline
+title Timeline
+
+%%  Syntax
+    %% Diagram      timeline
+    %% Title        title "TITLE"
+
+    %% Time         "TIME" :
+    %% Timepoint    "TIME" : "EVENT"
+    %% Multi-Event         : "EVENT"
+    %% Empty Event         : (Blank)
+
+    2023 : Event A
+
+    2024 : Event B1
+         : Event B2
+         : Event B3
+
+    2025 : Event D1
+         :
+         :
+         : Event D2
+
+    2026
+    Q1 : Goal 1
+       : Goal 2
+    Q2 : Second Quarter
+       : Goal 1
+    Q3 : Third Quarter
+       : Goal 1
+       : Goal 2
+       : Goal 3
+    Q4 : Fourth Quarter
+       :
+       : Goal 1
+       :
+       : Goal 2
+       :
+       : Goal 3
