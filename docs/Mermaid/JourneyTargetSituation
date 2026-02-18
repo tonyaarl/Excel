@@ -1,0 +1,25 @@
+journey
+title Target Situation (To Be)
+
+%%  Syntax
+    %% Diagram      journey
+    %% Title        title "TITLE"
+
+    %% Section      section "SECTION"
+    %% Step         "OPERATION" : "SCORE" : "ACTOR_1", "ACTOR_2", "ACTOR_3" ...
+
+section Task 1
+    Operation 1: 6: User 1
+    Operation 2: 7: User 1, User 3
+    Operation 3: 5: User 1
+    Operation 4: 8: User 1, User 2
+section Task 2
+    Operation 1: 5: User 1
+    Operation 2: 7: User 2, User 3
+    Operation 3: 6: User 3
+    Operation 4: 5: User 1, User 3
+section Task 3
+    Operation 1: 6: User 2, User 3
+    Operation 2: 6: User 2
+    Operation 3: 5: User 2
+    Operation 4: 8: User 1, User 2, User 3
