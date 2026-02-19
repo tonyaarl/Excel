@@ -1,0 +1,70 @@
+architecture-beta
+
+%%  Syntax
+
+    %% Disk Icon            disk
+    %% Cloud Icon           cloud
+    %% Server Icon          server
+    %% Unknown Icon         * <Any>
+    %% Database Icon        database
+    %% Internet Icon        internet
+
+    %% Top Direction        T
+    %% Bottom Direction     B
+    %% Left Direction       L
+    %% Right Direction      R
+
+    %% Group                group "Group_ID"("Icon")["Title"]
+
+    %% Service (External)   service "Service_ID"("Icon")["Title"]
+    %% Service (Internal)   service "Service_ID"("Icon")["Title"] in "Group_ID"
+
+    %% Junction (External)  junction "Junction_ID"
+    %% Junction (Internal)  junction "Junction_ID" in "Group_ID"
+
+    %% Service Connection   Service_ID:Direction -- Direction:Service_ID
+
+    %% Junction Connection  Junction:Direction -- Direction:Junction
+    %%                      Junction:Direction -- Direction:Service_ID
+    %%                      Service_ID:Direction -- Direction:Junction
+
+    group Group1(server)[Office]
+    group Group2(internet)[Web Service]
+    group Group3(unknown)[External User]
+    group Group4(cloud)[Firewall]
+
+    service Disk1(disk)[Disk 1] in Group1
+    service Disk2(disk)[Disk 2] in Group1
+    service Disk3(disk)[Disk 3] in Group1
+    service Disk4(disk)[Disk 4] in Group1
+    service Database1(database)[Database] in Group1
+
+    service ServerA(server)[Server A] in Group2
+    service ServerB(server)[Server B] in Group2
+    service ServerC(server)[Server C] in Group2
+
+    service User1(disk)[User] in Group3
+
+    junction Junction1 in Group1
+    junction Junction2 in Group1
+
+    junction Junction3 in Group2
+    junction Junction4 in Group2
+
+    junction Junction5 in Group4
+
+    Disk1:T -- B:Junction1
+    Disk2:B -- T:Junction1
+    Junction1:R -- L:Junction2
+    Disk3:T -- B:Junction2
+    Disk4:B -- T:Junction2
+    Junction2:R -- L:Database1
+
+    ServerA:B -- T:Junction3
+    Junction3:R -- L:Junction4
+    ServerB:B -- T:Junction4
+    ServerC:T -- B:Junction4
+
+    Junction4:R -- L:Junction5
+    Junction5:R -- L:Junction1
+    Junction5:B -- T:User1
