@@ -32,7 +32,7 @@ architecture-beta
 
     group Group1(server)[Office]
     group Group2(internet)[Web Service]
-    group Group3(unknown)[External User]
+    group Group3(cloud)[External User]
     group Group4(cloud)[Firewall]
 
     service Disk1(disk)[Disk 1] in Group1
@@ -45,7 +45,7 @@ architecture-beta
     service ServerB(server)[Server B] in Group2
     service ServerC(server)[Server C] in Group2
 
-    service User1(disk)[User] in Group3
+    service User1(unknown)[User] in Group3
 
     junction Junction1 in Group1
     junction Junction2 in Group1
