@@ -2,6 +2,8 @@ architecture-beta
 
 %%  Syntax
 
+    %% Diagram              architecture-beta
+
     %% Disk Icon            disk
     %% Cloud Icon           cloud
     %% Server Icon          server
